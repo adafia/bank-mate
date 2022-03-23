@@ -8,7 +8,9 @@ SQL Dialect: Postgresql
 
 1. After installing docker and cloning this project from github, change directory into the root of the project and run `make postgres`.
 
-2. Run `make creatdb` to create the project's database
+2. Run `make creatdb` to create the project's database.
+
+3. Run `go mod tidy` to install project dependencies.
 
 ### Database Set-up
 
@@ -39,6 +41,8 @@ SQL Dialect: Postgresql
 - Golang
 - Docker
 - Golang-Migrate. [Documentation](https://github.com/golang-migrate/migrate/tree/master/cmd/migrate)
+- SQLC. [Documentation](https://docs.sqlc.dev/en/latest/index.html)
+- SQLC configuration [guide](https://docs.sqlc.dev/en/latest/reference/config.html)
 
 ### Docker Commands
 
