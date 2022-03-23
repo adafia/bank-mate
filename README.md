@@ -43,6 +43,8 @@ SQL Dialect: Postgresql
 - Golang-Migrate. [Documentation](https://github.com/golang-migrate/migrate/tree/master/cmd/migrate)
 - SQLC. [Documentation](https://docs.sqlc.dev/en/latest/index.html)
 - SQLC configuration [guide](https://docs.sqlc.dev/en/latest/reference/config.html)
+- Lib/pq. Postgres Driver [github](https://github.com/lib/pq)
+- Testify: Test assertion library [github](https://github.com/stretchr/testify)
 
 ### Docker Commands
 
