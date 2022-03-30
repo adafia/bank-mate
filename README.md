@@ -55,3 +55,23 @@ SQL Dialect: Postgresql
 > Stop Postgres Container
 
 `docker stop postgres12`
+
+## Database Philosophy for Transactions
+
+Application of ACID Property
+
+### Atomicity(A)
+
+Either all operations complete successfully or the transaction fails and the db is unchanged
+
+### Consistency(C)
+
+The db state must be valid after the transaction. All constraints must be satisfied.
+
+### Isolation(I)
+
+Concurrent transactions must not affect each other.
+
+### Durability(D)
+
+Data written by a successful transaction must be recorded in persistent storage.
