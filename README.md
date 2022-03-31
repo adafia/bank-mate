@@ -8,9 +8,11 @@ SQL Dialect: Postgresql
 
 1. After installing docker and cloning this project from github, change directory into the root of the project and run `make postgres`.
 
-2. Run `make creatdb` to create the project's database.
+2. Follow the golang migrate [setup guide](https://github.com/golang-migrate/migrate/tree/master/cmd/migrate) to install its CLI tool. This is necessary for running database migrations.
 
-3. Run `go mod tidy` to install project dependencies.
+3. Run `make creatdb` to create the project's database.
+
+4. Run `go mod tidy` to install project dependencies.
 
 ### Database Set-up
 
