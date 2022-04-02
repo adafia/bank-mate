@@ -19,6 +19,8 @@ jobs:
           POSTGRES_USER: root
           POSTGRES_PASSWORD: root
           POSTGRES_DB: bank-mate
+        ports: 
+          - 5432:5432
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -38,8 +40,10 @@ jobs:
 
     - name: Install golang-migrate
       run: | 
-        curl -L https://github.com/golang-migrate/migrate/releases/download/v4.15.1/migrate.linux-amd64.tar.gz | tar xvz
-        sudo mv migrate.linux-amd64 /usr/bin/
+        curl -L https://packagecloud.io/golang-migrate/migrate/gpgkey | sudo apt-key add -
+        echo "deb https://packagecloud.io/golang-migrate/migrate/ubuntu/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/migrate.list
+        sudo apt-get update
+        sudo apt-get install -y migrate
         which migrate
 
     - name: Run migrations
