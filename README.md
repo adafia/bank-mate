@@ -47,6 +47,8 @@ SQL Dialect: Postgresql
 - SQLC configuration [guide](https://docs.sqlc.dev/en/latest/reference/config.html)
 - Lib/pq. Postgres Driver [github](https://github.com/lib/pq)
 - Testify: Test assertion library [github](https://github.com/stretchr/testify)
+- Viper: Read .env variables [github](https://github.com/spf13/viper)
+- GoMock: Mock Database [github](https://github.com/golang/mock)
 
 ### Docker Commands
 
