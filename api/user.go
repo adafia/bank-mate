@@ -60,7 +60,7 @@ func (server *Server) CreateUser(ctx *gin.Context) {
 
 	rsp := createUserResponse{
 		Username: user.Username,
-		FullName: user.Username,
+		FullName: user.FullName,
 		Email: user.Email,
 		PasswordChangedAt: user.PasswordChangedAt,
 		CreatedAt: user.CreatedAt,
