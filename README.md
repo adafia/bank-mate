@@ -16,6 +16,12 @@ SQL Dialect: Postgresql
 
 5. Run `make migrateup` to run database migrations.
 
+## Running tests
+
+1. Follow the steps in the project-setup section in setting up the project.
+
+2. Run `make test` tests.
+
 ### Database Set-up
 
 - Install docker
