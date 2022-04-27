@@ -10,9 +10,17 @@ SQL Dialect: Postgresql
 
 2. Follow the golang migrate [setup guide](https://github.com/golang-migrate/migrate/tree/master/cmd/migrate) to install its CLI tool. This is necessary for running database migrations.
 
-3. Run `make creatdb` to create the project's database.
+3. Run `go mod tidy` to install project dependencies.
 
-4. Run `go mod tidy` to install project dependencies.
+4. Run `make creatdb` to create the project's database.
+
+5. Run `make migrateup` to run database migrations.
+
+## Running tests
+
+1. Follow the steps in the project-setup section in setting up the project.
+
+2. Run `make test` tests.
 
 ### Database Set-up
 
@@ -49,6 +57,7 @@ SQL Dialect: Postgresql
 - Testify: Test assertion library [github](https://github.com/stretchr/testify)
 - Viper: Read .env variables [github](https://github.com/spf13/viper)
 - GoMock: Mock Database [github](https://github.com/golang/mock)
+- Paseto Token: [github](https://github.com/o1egl/paseto)
 
 ### Docker Commands
 
