@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bank-mate-api-deployment
+  labels:
+    app: bank-mate-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bank-mate-api
+  template:
+    metadata:
+      labels:
+        app: bank-mate-api
+    spec:
+      containers:
+      - name: bank-mate-api
+        image: 410135057664.dkr.ecr.eu-central-1.amazonaws.com/bank-mate:8fe3fe99a2bd1ad991b639125c55ff7d87a70807
+        ports:
+        - containerPort: 8080
